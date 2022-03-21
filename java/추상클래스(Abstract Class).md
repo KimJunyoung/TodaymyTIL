@@ -35,9 +35,9 @@ package abstractex;
 public class DeskTop extends Computer {
  
 }
-/* DeskTop 클래스를 만들면 아래와 같은 오류가 나게 된다.
+* DeskTop 클래스를 만들면 아래와 같은 오류가 나게 된다.
 The type DeskTop must implement the inherited abstract method Computer.typing()
--> 상속된 추상 메서드 Computer.typing()을 구현하거나 DeskTop 도 추상클래스로 선언을 해줘야한다. */
+-> 상속된 추상 메서드 Computer.typing()을 구현하거나 DeskTop 도 추상클래스로 선언을 해줘야한다.
  
  
 package abstractex;
@@ -66,7 +66,7 @@ public void display() {
 System.out.println("NoteBook display()");
 }
 }
- 추상클래스로 선언했으며 display() 메소드만 선언 및 구현했다.
+* 추상클래스로 선언했으며 display() 메소드만 선언 및 구현했다.
 ----------------------------------------------------------------------------------------------------------------------
  
 ### MyNoteBook  Class
@@ -78,7 +78,7 @@ public void typing() {
 System.out.println("My NoteBook typing()");
 }
 }
-MyNoteBook은 NoteBook을 상속받았기 때문에 처음에는 display()만 구현했는데 에러가 났다.
+* MyNoteBook은 NoteBook을 상속받았기 때문에 처음에는 display()만 구현했는데 에러가 났다.
  그 이유는 NoteBook은 Computerf를 상속 받았기 때문에 결국 typing()d의 구현도 필요했던 것이다.
 ---------------------------------------------------------------------------------------------------------------------- 
  
